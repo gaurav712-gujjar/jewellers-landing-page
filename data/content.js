@@ -4,10 +4,17 @@
    Image URLs live in data/images.js.
    ============================================================ */
 
-// live market inputs — update these two numbers whenever rates change
+// ── Contact ───────────────────────────────────────────────
+// Country code first, digits only. No +, no spaces, no dashes.
+// India example: 91 followed by the 10-digit number.
+const WHATSAPP_NUMBER = "919351101199";   // ← REPLACE with your business number
+const WHATSAPP_MESSAGE = "Hi Raani Haar, I'd like to know more about your collection.";
+
+// ── Live metal rates ──────────────────────────────────────
 const GOLD_RATE_PER_GRAM_22K = 14200;   // ₹
 const SILVER_RATE_PER_GRAM_925 = 230;   // ₹
 
+// ── Categories (16) ───────────────────────────────────────
 const CATEGORY_NAMES = [
   "Rings", "Earrings", "Diamonds", "Pendants", "Chains", "Bracelets",
   "Bangles", "Necklaces", "Nose Pins", "Kadas", "Men's Jewellery",
@@ -15,6 +22,7 @@ const CATEGORY_NAMES = [
   "Mangalsutras"
 ];
 
+// ── Products ──────────────────────────────────────────────
 const silverProducts = [
   { name: "Oxidised Kada",      meta: "925 Silver · 45g", w: 45, mk: .25 },
   { name: "Temple Anklet Pair", meta: "925 Silver · 30g", w: 30, mk: .30 },
@@ -51,13 +59,15 @@ const bestProducts = [
   { name: "Solitaire Halo Ring",     meta: "18K White Gold · 0.50ct", price: 68500 },
 ];
 
+// ── Editorial ─────────────────────────────────────────────
 const trendLooks = [
   { title: "Festive Radiance", sub: "22K temple sets" },
   { title: "Bridal Heritage",  sub: "Kundan & polki" },
-  { title: "Office Elegance",  sub: "Minimal diamond studs" },
+  { title: "Office Edit",      sub: "Minimal diamond studs" },
   { title: "Weekend Layers",   sub: "Silver stacking" },
 ];
 
+// ── Reviews ───────────────────────────────────────────────
 const reviews = [
   { name: "Ananya Rao",   loc: "Bengaluru · Verified Buyer", stars: 5, text: "The gold rate at checkout matched exactly what was shown on the product page. No last-minute surprises — bought a mangalsutra for my wedding and it's beautifully finished." },
   { name: "Kavya Menon",  loc: "Kochi · Verified Buyer",     stars: 5, text: "Ordered a silver kada as a gift. The packaging and the hallmark certificate made it feel like a proper jewellery store purchase, not an online order." },

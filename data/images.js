@@ -111,6 +111,7 @@ const IMAGES = {
     "Kavya Menon":    "https://images.unsplash.com/photo-1587538018365-2a1f8b544c08?w=100&h=100&fit=crop&auto=format&q=80",
     "Rohit Sharma":   "https://images.unsplash.com/photo-1649433658557-54cf58577c68?w=100&h=100&fit=crop&auto=format&q=80",
     "Priya Iyer":     "https://images.unsplash.com/photo-1646979200020-941e1deb2670?w=100&h=100&fit=crop&auto=format&q=80",
-    "Devansh Patel":  "https://images.unsplash.com/photo-1531339413195-cc6c17163974?w=100&h=100&fit=crop&auto=format&q=80"
+    "Devansh Patel":  "https://images.unsplash.com/photo-1594672830234-ba4cfe1202dc?q=80&w=1170&auto=format&fit=crop"
   }
 };
+
