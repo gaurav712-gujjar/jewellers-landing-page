@@ -4,10 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Raani Haar — Where Tradition Meets Timeless Luxury</title>
-<meta name="description" content="Raani Haar — hallmarked gold, certified diamonds, 925 sterling silver and hand-finished artificial jewellery. Transparent pricing, meticulous craftsmanship, made in India.">
-<meta property="og:title" content="Raani Haar — Where Tradition Meets Timeless Luxury">
-<meta property="og:description" content="Hallmarked gold, certified diamonds and 925 sterling silver — priced with complete clarity.">
-<meta property="og:type" content="website">
+<meta name="description" content="Raani Haar — hallmarked gold, certified diamonds, 925 sterling silver and hand-finished artificial jewellery.">
 <meta name="theme-color" content="#152925">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26' font-family='Georgia,serif' fill='%23A9793C'>R</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,10 +43,20 @@
   </div>
 </header>
 
+<!-- MOBILE MENU PANEL — alag element, header ke andar nahi -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-head">
+    <span class="mobile-menu-title">Menu</span>
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="mobile-menu-body" id="mobileMenuBody"></div>
+</div>
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
 <!-- ================= HERO ================= -->
 <section id="hero">
   <div class="hero-track-wrap">
-    <div class="hero-track" id="heroTrack"><!-- injected by js/app.js --></div>
+    <div class="hero-track" id="heroTrack"></div>
   </div>
   <div class="hero-overlay">
     <span class="hero-eyebrow">CRAFTED WITH CARE — PRICED WITH CLARITY</span>
@@ -82,7 +89,7 @@
       </div>
       <p>Whether it's a wedding morning or a Tuesday at your desk — find the edit made for the occasion.</p>
     </div>
-    <div class="style-grid"><!-- injected by js/app.js --></div>
+    <div class="style-grid"></div>
   </div>
 </section>
 
@@ -252,16 +259,12 @@
 <div class="cart-overlay" id="cartOverlay"></div>
 
 <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
-
-  <!-- CART VIEW -->
   <div class="cart-view" id="cartView">
     <header class="cart-head">
       <h3 class="cart-title">Your Cart</h3>
       <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
     </header>
-
     <div class="cart-body" id="cartBody"></div>
-
     <div class="cart-foot" id="cartFoot" hidden>
       <div class="cart-subtotal">
         <span>Subtotal</span>
@@ -272,40 +275,33 @@
     </div>
   </div>
 
-  <!-- CHECKOUT VIEW -->
   <div class="cart-view" id="checkoutView" hidden>
     <header class="cart-head">
       <button class="cart-back" id="checkoutBack" aria-label="Back to cart">&#8592;</button>
       <h3 class="cart-title">Checkout</h3>
     </header>
-
     <form class="checkout-form" id="checkoutForm">
       <label>Full name<input type="text" name="name" required autocomplete="name"></label>
       <label>Phone / WhatsApp<input type="tel" name="phone" required autocomplete="tel" placeholder="+91"></label>
       <label>City<input type="text" name="city" required autocomplete="address-level2"></label>
       <label>Notes <span class="opt">(optional)</span><textarea name="notes" rows="3" placeholder="Ring size, delivery preference…"></textarea></label>
-
       <div class="checkout-summary">
         <div><span>Items</span><strong id="checkoutCount">0</strong></div>
         <div><span>Total</span><strong id="checkoutTotal">₹0</strong></div>
       </div>
-
       <button type="submit" class="btn-checkout">Place Order via WhatsApp</button>
       <p class="checkout-note">We'll confirm availability and share payment options on WhatsApp within a few hours.</p>
     </form>
   </div>
 
-  <!-- SUCCESS VIEW -->
   <div class="cart-view cart-success" id="successView" hidden>
     <div class="success-mark">&#10003;</div>
     <h3>Order request sent</h3>
     <p>We've opened WhatsApp with your order. Send the message and our team will confirm shortly.</p>
     <button class="btn-checkout" id="successClose">Continue Shopping</button>
   </div>
-
 </aside>
 
-<!-- Toast -->
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="data/images.js"></script>
